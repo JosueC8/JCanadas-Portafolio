@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio personal con proyectos, habilidades y enlaces profesionales."
+    />
+    <title>Dennis Josué Cañadas | Cyberpunk Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="cyber-stage" aria-hidden="true"></canvas>
+
+    <div class="noise" aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Volver al inicio">
+        <span class="brand-mark">root</span>
+        <span class="brand-text">/night-city</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegacion principal">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#stack">Stack</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Night city build / GitHub profile</p>
+          <h1>
+            Dennis Josué Cañadas
+            <span>Web Developer</span>
+          </h1>
+          <p class="hero-text">
+            Me apasiona desarrollar sistemas web que aporten soluciones reales a las necesidades de empresas y usuarios. Disfruto diseñando arquitecturas backend sólidas, creando interfaces intuitivas y automatizando procesos para optimizar el trabajo diario. Mi objetivo es construir aplicaciones funcionales, eficientes y fáciles de utilizar, priorizando siempre la experiencia del usuario y la calidad del software.
+          </p>
+
+          <div class="hero-actions" aria-label="Enlaces principales">
+            <a class="button primary" href="https://github.com/JosueC8" target="_blank" rel="noreferrer">
+              Ver GitHub
+            </a>
+            <a class="button ghost" href="https://www.linkedin.com/in/josu%C3%A9-ca%C3%B1adas-a55937311" target="_blank" rel="noreferrer">
+              Ver Linkedin
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <figure class="profile-orbit">
+            <img src="assets/profile.jpeg" alt="Foto de Dennis Josué Cañadas" />
+          </figure>
+
+          <aside class="terminal" aria-label="Resumen profesional estilo terminal">
+            <div class="terminal-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span class="prompt">$ Perfil Profesional</span>
+                <p>Desarrollador web enfocado en sistemas internos, externos y soluciones corporativas.</p>
+              </div>
+              <div class="terminal-line">
+                <span class="prompt">$ Mi Enfoque</span>
+                <p class="success">Sitios Webs responsive, landing pages, APIs, bases de datos, paneles de gestion empresariales, reporteria y automatizaciones.</p>
+              </div>
+              <div class="terminal-line">
+                <span class="prompt">$ Metodología de Trabajo</span>
+                <p class="warning">Trabajo ordenado mediante procesos: Requerimientos, Diseño, Desarrollo y Deploy. <br/>
+                Garantizando que la calidad del software sea de calidad e intuitivo para el usuario.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Resumen rapido">
+        <article>
+          <strong>+3</strong>
+          <span>capas dominadas: frontend, backend y gestión de los datos</span>
+        </article>
+        <article>
+          <strong>API</strong>
+          <span>servicios REST, autenticación y flujos internos automatizados</span>
+        </article>
+        <article>
+          <strong>UI/UX</strong>
+          <span>Interfaces pensadas para una experiencia de usuario intuitiva y atractiva</span>
+        </article>
+      </section>
+
+      <section class="section" id="proyectos">
+        <div class="section-heading">
+          <p class="eyebrow">Selected operations</p>
+          <h2>Proyectos destacados</h2>
+        </div>
+
+        <div class="project-grid">
+          <a class="project-card featured" href="https://sjflooringatl.com/" target="_blank" rel="noreferrer">
+            <img class="project-media project-emblem" src="assets/sjflooringatl-logo.png" alt="Logo de SJFLOORINGATL" />
+            <div>
+              <p class="project-kicker">Sitio Web Empresarial</p>
+              <h3>SJFLOORINGATL</h3>
+              <p>
+                Sitio web enfocado en mostrar información sobre sus servicios, contacto y portafolio de trabajos realizados. El sitio web es responsive y optimizado para SEO.
+              </p>
+            </div>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+              <li>HOSTINGUER</li>
+            </ul>
+          </a>
+
+          <article class="project-card">
+            <img class="project-media project-emblem recarga-emblem" src="assets/recarga-veloz-white.png" alt="Logo del sistema Recarga Veloz SA" />
+            <div>
+              <p class="project-kicker">Gestion operativa</p>
+              <h3>Recarga Veloz SA</h3>
+              <p>
+                Sistema para gestion de equipos tecnologicos, reportes, manejo
+                de facturas y control de mantenimientos.
+              </p>
+            </div>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>MySQL</li>
+              <li>Laravel</li>
+              <li>REST API</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="stack">
+        <div class="section-heading">
+          <p class="eyebrow">Tech arsenal</p>
+          <h2>Stack y enfoque</h2>
+          <p>
+            Desarrollo aplicaciones web con un enfoque en la calidad, la escalabilidad y el mantenimiento. Busco crear soluciones con una arquitectura sólida, código limpio e interfaces intuitivas que faciliten tanto la experiencia del usuario como la evolución del proyecto.
+          </p>
+        </div>
+
+        <div class="stack-panel">
+          <div class="stack-row">
+            <span>Frontend</span>
+            <p>React, TypeScript, HTML, CSS y JavaScript, con enfoque en interfaces responsivas y experiencia de usuario.</p>
+          </div>
+          <div class="stack-row">
+            <span>Backend</span>
+            <p>Node.js y Laravel para desarrollo de APIs, lógica de negocio, autenticación y servicios REST.</p>
+          </div>
+          <div class="stack-row">
+            <span>Datos</span>
+            <p>SQL Server, diseño y modelado de bases de datos, consultas avanzadas y procedimientos almacenados.</p>
+          </div>
+          <div class="stack-row">
+            <span>Enfoque aplicado</span>
+            <p>Código mantenible, depuración, documentación, automatización de procesos y entregas iterativas.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contacto">
+        <p class="eyebrow">Open channel</p>
+        <h2>Hablemos de tecnologia y proyectos</h2>
+        <p>
+          Si buscas un desarrollador web para construir, mejorar o
+          mantener sistemas web, puedes contactarme por correo o revisar mi
+          trabajo en GitHub.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:denniscanadas@gmail.com">denniscanadas@gmail.com</a>
+          <a href="https://github.com/JosueC8" target="_blank" rel="noreferrer">github.com/JosueC8</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>crafted in neon mode</span>
+      <span>2026 Dennis Josué Cañadas</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
